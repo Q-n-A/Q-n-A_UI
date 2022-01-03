@@ -6,9 +6,13 @@ import WindiCSS from "vite-plugin-windicss";
 export default defineConfig({
   plugins: [react(), WindiCSS()],
   server: {
-    port: 9001,
+    port: 9000,
     proxy: {
       "/api": {
+        target: "https://dev-q-n-a.trap.games/",
+        changeOrigin: true,
+      },
+      "/grpc": {
         target: "https://dev-q-n-a.trap.games/",
         changeOrigin: true,
       },
