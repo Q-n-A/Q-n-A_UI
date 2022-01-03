@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Route, Switch } from "react-router";
 import Settings from "../components/Settings";
 import Main from "../components/Main";
+import Ping from "../components/Ping";
 
 const Router: VFC = () => {
   return (
@@ -13,6 +14,9 @@ const Router: VFC = () => {
         </Route>
         <Route path="/settings">
           <Settings />
+        </Route>
+        <Route path="/ping">
+          <Ping />
         </Route>
       </Switch>
     </BrowserRouter>
