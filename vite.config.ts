@@ -11,6 +11,7 @@ export default defineConfig({
           [
             "@babel/plugin-transform-react-jsx",
             { runtime: "automatic", importSource: "@emotion/react" },
+            "emotion-loader",
           ],
         ],
       },
