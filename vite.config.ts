@@ -10,10 +10,7 @@ export default defineConfig({
         plugins: [
           [
             "@babel/plugin-transform-react-jsx",
-            {
-              runtime: "automatic",
-              importSource: "@emotion/react",
-            },
+            { runtime: "automatic", importSource: "@emotion/react" },
           ],
         ],
       },
