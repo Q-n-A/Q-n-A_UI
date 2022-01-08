@@ -4,7 +4,22 @@ import WindiCSS from "vite-plugin-windicss";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), WindiCSS()],
+  plugins: [
+    react({
+      babel: {
+        plugins: [
+          [
+            "@babel/plugin-transform-react-jsx",
+            {
+              runtime: "automatic",
+              importSource: "@emotion/react",
+            },
+          ],
+        ],
+      },
+    }),
+    WindiCSS(),
+  ],
   server: {
     port: 9000,
     proxy: {
