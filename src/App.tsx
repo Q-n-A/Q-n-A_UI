@@ -1,5 +1,3 @@
-/** @jsxImportSource @emotion/react */
-
 import { VFC } from "react";
 import { css, keyframes } from "@emotion/react";
 import logo from "/logo.svg";
