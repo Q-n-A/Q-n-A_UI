@@ -4,9 +4,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview",
-    "lint": "eslint src --ext .ts,.tsx && prettier --write .",
-    "gen": "bash scripts/gen-protobuf.sh"
+    "preview": "vite preview",
+    "lint": "eslint ./src --ext .ts,.tsx",
+    "format": "prettier --write ./src",
+    "gen": "bash scripts/gen-protobuf.sh",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
