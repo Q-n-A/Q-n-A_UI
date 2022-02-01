@@ -10,8 +10,7 @@ const styles = {
     font-size: calc(10px + 2vmin);
     background: transparent;
     color: white;
-    border-style: solid 1px #ffffff;
-    border-color: #ffffff;
+    border: solid 0.2rem white;
     margin: 1rem;
   `,
   link: css`
