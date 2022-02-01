@@ -5,12 +5,13 @@ import Router from "./router/Router";
 
 const keyframe = {
   spin: keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }`,
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  `,
 };
 const style = {
   app: css`
@@ -25,6 +26,7 @@ const style = {
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+    padding-top: 5rem;
   `,
   logo: css`
     height: 40vmin;
@@ -38,7 +40,7 @@ const style = {
 const App: VFC = () => {
   return (
     <div css={style.app}>
-      <header className="pt-20" css={style.header}>
+      <header css={style.header}>
         <img src={logo} css={style.logo} alt="logo" />
         <Router />
       </header>

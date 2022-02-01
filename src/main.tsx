@@ -1,13 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "virtual:windi.css";
+import { StrictMode } from "react";
+import { render } from "react-dom";
 import App from "./App";
 import GlobalStyle from "./styles/Global";
 
-ReactDOM.render(
-  <React.StrictMode>
+render(
+  <StrictMode>
     <GlobalStyle />
     <App />
-  </React.StrictMode>,
+  </StrictMode>,
   document.getElementById("root")
 );

@@ -18,15 +18,6 @@ const GlobalStyle: VFC = () => {
           font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
             monospace;
         }
-
-        .button {
-          border-width: calc(1.5px + 0.3vmin);
-          font-size: calc(10px + 2vmin);
-        }
-
-        .link {
-          color: #61dafb;
-        }
       `}
     />
   );
