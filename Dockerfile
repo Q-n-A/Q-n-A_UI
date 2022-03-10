@@ -21,7 +21,8 @@ RUN npm run gen && \
   npm run build
 
 FROM caddy:2.4.6-alpine AS runner
-EXPOSE 80
 
 COPY --from=builder /temp/dist /usr/share/caddy
 COPY ./dev/Caddyfile /etc/caddy
+
+EXPOSE 80
