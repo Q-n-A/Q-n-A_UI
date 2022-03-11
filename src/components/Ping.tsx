@@ -2,6 +2,8 @@ import { useEffect, useState, VFC } from "react";
 import { GrpcWebImpl, PingClientImpl } from "../protobuf/protobuf/ping";
 
 const Ping: VFC = () => {
+  document.title = "Ping - Q'n'A";
+
   const [message, setMessage] = useState("");
 
   const rpc = new GrpcWebImpl("/grpc", {
@@ -16,7 +18,7 @@ const Ping: VFC = () => {
         setMessage(response.message);
       })
       .catch((error) => {
-        console.error(error);
+        alert(error.message);
       });
   }, []);
 

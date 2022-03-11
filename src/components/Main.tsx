@@ -19,6 +19,8 @@ const styles = {
 };
 
 const Main: VFC = () => {
+  document.title = "Q'n'A - traP Anonymous Question Box Service";
+
   const [count, setCount] = useState(0);
 
   return (

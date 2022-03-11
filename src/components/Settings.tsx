@@ -9,6 +9,8 @@ const styles = {
 };
 
 const Settings: VFC = () => {
+  document.title = "Settings - Q'n'A";
+
   return (
     <>
       <p>This is the Settings Page!</p>
