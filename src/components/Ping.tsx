@@ -1,4 +1,5 @@
 import { useEffect, useState, VFC } from "react";
+
 import { GrpcWebImpl, PingClientImpl } from "../protobuf/protobuf/ping";
 
 const Ping: VFC = () => {

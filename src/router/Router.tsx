@@ -1,9 +1,10 @@
 import { VFC } from "react";
-import { BrowserRouter, Routes } from "react-router-dom";
 import { Route } from "react-router";
-import Settings from "../components/Settings";
+import { BrowserRouter, Routes } from "react-router-dom";
+
 import Main from "../components/Main";
 import Ping from "../components/Ping";
+import Settings from "../components/Settings";
 
 const Router: VFC = () => {
   return (
