@@ -19,7 +19,7 @@
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.2",
     "react-router-guards": "^1.0.2",
-    "ts-proto": "^1.106.2"
+    "ts-proto": "^1.110.2"
   },
   "devDependencies": {
     "@types/node": "^17.0.21",
