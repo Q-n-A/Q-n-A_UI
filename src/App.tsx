@@ -1,9 +1,9 @@
 import { css, keyframes } from "@emotion/react";
 import { VFC } from "react";
 
-import logo from "/logo.svg";
-
 import Router from "./router/Router";
+
+import logo from "/logo.svg";
 
 const keyframe = {
   spin: keyframes`
