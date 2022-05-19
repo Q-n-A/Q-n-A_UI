@@ -1,4 +1,4 @@
-FROM node:16.14.2 AS builder
+FROM node:18.2.0 AS builder
 ARG TARGETARCH
 WORKDIR /temp
 
