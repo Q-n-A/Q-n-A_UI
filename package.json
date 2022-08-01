@@ -11,7 +11,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@emotion/react": "^11.8.2",
+    "@emotion/react": "^11.10.0",
     "@improbable-eng/grpc-web": "^0.15.0",
     "@reduxjs/toolkit": "^1.8.0",
     "react": "^17.0.2",
